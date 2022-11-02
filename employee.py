@@ -119,6 +119,36 @@ while True:
 
 
         print('update employee')
+        empcode = input('enter the empcode')
+
+
+
+        empname = input('enter the empname to be updated')
+
+
+
+        designation = input('enter the designation to be updated ')
+
+
+
+        salary = input('enter the salary to be updated')
+        companyname = input('enter the company name to be updated')
+
+       
+
+        phno = input('enter the phn no to be updated')
+
+       
+
+        email = input('enter the email to updated')
+
+       
+
+        password = input('enter the password to be updated')
+        sql = "UPDATE `employee` SET =`empname`='"+empname+"',`designation`='"+designation+"',`salary`='"+salary+"',`companyname`='"+companyname+"',`phoneno`='"+phoneno+"',`emailid`='"+emailid+"',`password`='"+password+"' WHERE `empcode`="+empcode
+        mycursor.execute(sql)
+        mydb.commit()
+        print("updated successfully.")
 
 
 
@@ -130,7 +160,7 @@ while True:
         emcode = input("enter the empcode number:")
         sql = 'DELETE FROM `employee` WHERE `empcode`='+empcode
         mycursor.execute()
-        
+
 
 
 
