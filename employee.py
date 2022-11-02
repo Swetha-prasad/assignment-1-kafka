@@ -117,6 +117,10 @@ while True:
 
 
         print('delete employee')
+        emcode = input("enter the empcode number:")
+        sql = 'DELETE FROM `employee` WHERE `empcode`='+empcode
+        mycursor.execute()
+        
 
 
 
