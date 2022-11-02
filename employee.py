@@ -105,6 +105,12 @@ while True:
 
 
         print('search employee')
+        empcode = input("enter the empcode:")
+        sql = 'SELECT `id`, `empcode`, `empname`, `designation`, `salary`, `companyname`, `phoneno`, `emailid`, `password` FROM `employee` WHERE `empcode`= '+empcode
+        data =(empcode)
+        mycursor.execute(sql)
+        result = mycursor.fetcall()
+        print(result)
 
 
 
