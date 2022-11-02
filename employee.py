@@ -93,6 +93,10 @@ while True:
 
 
         print('view employee')
+        sql = 'SELECT * FROM `employee`'
+        mycursor.execute(sql)
+        
+    
 
 
 
