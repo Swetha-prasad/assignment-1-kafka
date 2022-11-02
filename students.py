@@ -79,5 +79,6 @@ while True:
         mycursor.execute(sql,data)
         mydb.commit()
         print("marks data inserted successfully.")
+       
     elif(choice==10):
         break    
